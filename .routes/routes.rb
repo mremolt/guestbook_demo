@@ -1,5 +1,5 @@
 GuestbookDemo::Application.routes.draw do
-  namespace :guest_book do
+  namespace :guestbook do
     resources :entries
   end
 

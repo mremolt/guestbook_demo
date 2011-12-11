@@ -1,0 +1,7 @@
+   guestbook_entries GET    /guestbook/entries(.:format)          {:action=>"index", :controller=>"guestbook/entries"}
+                     POST   /guestbook/entries(.:format)          {:action=>"create", :controller=>"guestbook/entries"}
+ new_guestbook_entry GET    /guestbook/entries/new(.:format)      {:action=>"new", :controller=>"guestbook/entries"}
+edit_guestbook_entry GET    /guestbook/entries/:id/edit(.:format) {:action=>"edit", :controller=>"guestbook/entries"}
+     guestbook_entry GET    /guestbook/entries/:id(.:format)      {:action=>"show", :controller=>"guestbook/entries"}
+                     PUT    /guestbook/entries/:id(.:format)      {:action=>"update", :controller=>"guestbook/entries"}
+                     DELETE /guestbook/entries/:id(.:format)      {:action=>"destroy", :controller=>"guestbook/entries"}
